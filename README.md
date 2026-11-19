@@ -14,3 +14,13 @@
 <h3><a href="https://github.com/SkyCat223Real/SkyManager/releases/latest">⬇️ Neueste Version herunterladen</a></h3>
 
 </div>
+
+## Quellcode
+
+| Ordner | Inhalt |
+| --- | --- |
+| [`android/`](android/) | Neue App-Funktionen ab 9.44, Build-Skript und Tests |
+| [`server/`](server/) | Cloud-Server (Cloudflare Worker) für Online-Konto, Backups, Profile und Bestenlisten |
+| [`web/`](web/) | Web-App für iPhone und Browser (cloud.skycat223.de/app) |
+| [`website/`](website/) | Offizielle Webseite skymanager-official.de mit Trailer |
+

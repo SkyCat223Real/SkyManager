@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/w_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="14dp"
+    android:background="@drawable/widget_bg">
+    <TextView android:id="@+id/w_title" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="☀️ Mein Tag" android:textColor="#FF3DDC84" android:textSize="13sp" android:textStyle="bold" android:maxLines="1" />
+    <TextView android:id="@+id/w_brief" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" android:text="Öffne SkyManager für deinen Tag" android:textColor="#FFEEF5F0" android:textSize="14sp"
+        android:maxLines="4" android:ellipsize="end" />
+    <TextView android:id="@+id/w_extra" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:textColor="#FF9DB0A5" android:textSize="13sp" android:maxLines="3" android:ellipsize="end" />
+</LinearLayout>

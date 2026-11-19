@@ -1,0 +1,1 @@
+{"name": "SkyManager", "short_name": "SkyManager", "start_url": "/app", "scope": "/app", "display": "standalone", "background_color": "#0b0f0d", "theme_color": "#0b0f0d", "lang": "de", "icons": [{"src": "/app/icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}]}
