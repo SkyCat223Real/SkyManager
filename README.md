@@ -14,3 +14,7 @@
 <h3><a href="https://github.com/SkyCat223Real/SkyManager/releases/latest">⬇️ Neueste Version herunterladen</a></h3>
 
 </div>
+
+## Quellcode
+
+Die neuen App-Funktionen ab 9.44 mit Build-Skript und Tests liegen in [`android/`](android/).
