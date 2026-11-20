@@ -8,6 +8,9 @@ final class NewTools {
     private NewTools() {}
 
     static final Object[][] MINE = {
+            {"rbxcheck", "Spieler-Check", Integer.valueOf(R.drawable.ic_shield)},
+            {"giveaway", "Giveaways", Integer.valueOf(R.drawable.ic_gift)},
+            {"rules", "Regelwerk", Integer.valueOf(R.drawable.ic_report)},
             {"rbxgroups", "Roblox-Gruppen", Integer.valueOf(R.drawable.ic_team)},
             {"apply", "Bewerbungen", Integer.valueOf(R.drawable.ic_report)},
             {"events", "Event-Planer", Integer.valueOf(R.drawable.ic_star)},
@@ -15,7 +18,7 @@ final class NewTools {
             {"modlog", "Mod-Log", Integer.valueOf(R.drawable.ic_shield)},
             {"widget", "Homescreen-Widget", Integer.valueOf(R.drawable.ic_today)},
     };
-    static final String[][] MY_SECTIONS = {{"Neu in 9.47-9.49", "rbxgroups", "apply", "events"}, {"Neu in 9.44-9.46", "dctrack", "modlog", "widget"}};
+    static final String[][] MY_SECTIONS = {{"Neu in 9.50-9.52", "rbxcheck", "giveaway", "rules"}, {"Neu in 9.47-9.49", "rbxgroups", "apply", "events"}, {"Neu in 9.44-9.46", "dctrack", "modlog", "widget"}};
 
     static final Object[][] ENTRIES = concat(MINE, NewToolsBase.ENTRIES);
     static final String[][] SECTION_DEFS = concatS(MY_SECTIONS, NewToolsBase.SECTION_DEFS);
@@ -40,6 +43,9 @@ final class NewTools {
             if ("rbxgroups".equals(id)) return RbxGroups.page(a);
             if ("apply".equals(id)) return Applications.page(a);
             if ("events".equals(id)) return EventPlanner.page(a);
+            if ("rbxcheck".equals(id)) return RbxPlayerCheck.page(a);
+            if ("giveaway".equals(id)) return Giveaways.page(a);
+            if ("rules".equals(id)) return Rules.page(a);
             return MyDayWidget.page(a);
         } catch (Throwable t) {
             LinearLayout[] p = NX.page(a, "Fehler", "Diese Seite konnte nicht geöffnet werden");
