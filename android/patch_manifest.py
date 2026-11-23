@@ -11,5 +11,5 @@ if "MyDayWidget" not in m:
     </application>'''
     m = m.replace("    </application>", rec)
     open(d + "/AndroidManifest.xml", "w", encoding="utf-8").write(m)
-y = open(d + "/apktool.yml", encoding="utf-8").read().replace("versionCode: 99", "versionCode: 105").replace("versionName: 9.43.0", "versionName: 9.49.0")
+y = open(d + "/apktool.yml", encoding="utf-8").read().replace("versionCode: 99", "versionCode: 111").replace("versionName: 9.43.0", "versionName: 9.55.0")
 open(d + "/apktool.yml", "w", encoding="utf-8").write(y)

@@ -127,6 +127,12 @@ final class Applications {
                         @Override public void onClick(View vv) { final String m = msg.getText().toString(); CloudPage.bg(a, null, new CloudPage.Job() { @Override public String run() throws Exception { String err = post(a, e, hookSel, m); return err == null ? "In Discord gepostet ✓" : "Discord: " + err; } }); }
                     }), 6);
                 }
+                if ("angenommen".equals(e.optString("status"))) {
+                    TextView adopt = NX.text(a, TeamMath.exists(Db.list(a, Team.KEY), e.optString("name")) ? "✅ Ist im Team" : "👥 Ins Team übernehmen", 13, C.ACCENT, true);
+                    adopt.setPadding(0, U.dp(10), 0, 0);
+                    adopt.setOnClickListener(new View.OnClickListener() { @Override public void onClick(View vv) { NX.toast(a, Team.adopt(a, e)); a.render(); } });
+                    row.addView(adopt);
+                }
                 TextView del = NX.text(a, "Bewerbung löschen", 12, C.DIM, false);
                 del.setPadding(0, U.dp(10), 0, 0);
                 del.setOnClickListener(new View.OnClickListener() {
