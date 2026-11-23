@@ -10,8 +10,15 @@ Die App wird auf Basis der offiziellen Release-APK **v9.43.0** gebaut. Neue Funk
 | `RbxGroup*`, `RbxGroups` | 👥 Roblox-Gruppen (9.47) |
 | `Apply*`, `Applications` | 📋 Bewerbungen (9.48) |
 | `Event*` | 🎉 Event-Planer (9.49) |
+| `RbxPlayer*` | 🔎 Roblox-Spieler-Check mit Zweitkonto-Einschätzung (9.50) |
+| `Giveaway*` | 🎁 Giveaways mit fairer Ziehung (9.51) |
+| `Rules*` | 📜 Regelwerk mit Vorlagen und Discord-Post (9.52) |
+| `Team*` | 👥 Team-Verwaltung mit Rängen, Beförderungen, Abwesenheit (9.53) |
+| `Fine*`, `Fines` | ⚖️ Bußgeldkatalog mit Rechner (9.54) |
+| `Report*`, `Reports` | 🚨 Einsatzberichte mit Nummern und Discord-Post (9.55) |
+| `HookPost` | Gemeinsam: Webhook wählen und Nachricht senden |
 | `NewTools` | Menü: neue Werkzeuge vorne, der Rest kommt unverändert aus `NewToolsBase` (9.43) |
 
 **Bauen:** `build.sh` (braucht apktool, ecj, Android-Build-Tools, dex2jar und den Signaturschlüssel, der **nicht** im Repo liegt).
 
-**Tests:** `tests/src/LogicTests.java` und `Logic2Tests.java` (55 Tests, laufen auf normalem Java mit org.json), `tests/fixtures/` enthält echte Antworten von Discord und Roblox.
+**Tests:** `tests/src/LogicTests.java` bis `Logic4Tests.java` (110 Tests, laufen auf normalem Java mit org.json), `tests/fixtures/` enthält echte Antworten von Discord und Roblox.
